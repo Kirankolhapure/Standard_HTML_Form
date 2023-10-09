@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form_Kiran</title>
+</head>
+<body>
+    <h1>College Admission Form</h1>
+    <form action="Message.html">
+        <fieldset>
+            <legend><h3>Personal Details :</h3></legend>
+            <label for="">(* Indicating Fields are Mandatory)</label>
+            <br>
+            <table>
+                <tr>
+                    <td><label for="">First Name*</label></td>
+                    <td><input type="text" name="FN" required placeholder="Ex:Kiran" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Middle Name</label></td>
+                    <td><input type="text" name="MN" placeholder="Ex:Shashikant" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name*</label></td>
+                    <td><input type="text" name="LN" required placeholder="Ex:Kolhapure" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile Number*</label></td>
+                    <td><input type="tel" name="contact" required placeholder="Ex:984-123-9851" pattern="[6-9]{1}[0-9]{9}" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email*</label></td>
+                    <td><input type="Email" name="Mail" required placeholder="Ex:kiran@gmail.com" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password*</label></td>
+                    <td><input type="password" name="pwd" required placeholder="Min 5 characters" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirm Password*</label></td>
+                    <td><input type="password" name="cpwd" required placeholder="Min 5 characters" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">DOB*</label></td>
+                    <td><input type="date" name="dob" required size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender*</label></td>
+                    <td><input type="radio" name="gender" required  size="15">Male
+                        <input type="radio" name="gender" required  size="15">Female
+                        <input type="radio" name="gender" required  size="15">Custom
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Select Country*</label></td>
+                    <td>
+                    <select required name="country">
+                        <option value="">Select</option>
+                        <option value="">INDIA</option>
+                        <option value="">USA</option>
+                        <option value="">RUSSIA</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Upload Image*</label></td>
+                    <td><input type="file" name="pic" required size="15"></td>
+                </tr>
+                <tr><td><input type="Reset"></td></tr>
+            </table>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Academic Details :</h3></legend>
+            <table>
+                <tr>
+                    <td><label for="">Select Branch*</label></td>
+                    <td>
+                    <select required name="branch">
+                        <option value="">Select</option>
+                        <option value="">CSE</option>
+                        <option value="">CIVIL</option>
+                        <option value="">ECE</option>
+                        <option value="">EEE</option>
+                        <option value="">MECH</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr><td><label for="">Choose Facilities</label></td>
+                    <td><input type="checkbox" >Bus
+                        <input type="checkbox" >Library
+                        <input type="checkbox" >Sport
+                    </td>
+                </tr>
+                <tr>
+                <td><label for="">Comments(if any)</label></td>
+                </tr>
+                <tr>
+                <td><textarea name="" id="" cols="20" rows="4"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!--Comment-->
+        <button>Submit</button>
+    </form>
+</body>
+</html>
